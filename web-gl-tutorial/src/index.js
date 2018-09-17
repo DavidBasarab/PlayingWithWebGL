@@ -7,7 +7,7 @@ class Square extends React.Component {
         super(props);
 
         this.state = {
-            value : null,
+            value: null,
         };
     }
 
@@ -22,7 +22,7 @@ class Square extends React.Component {
 
 class Board extends React.Component {
     static renderSquare(i) {
-        return <Square value={i} />;
+        return <Square value={i}/>;
     }
 
     render() {
@@ -56,7 +56,7 @@ class Game extends React.Component {
         return (
             <div className="game">
                 <div className="game-board">
-                    <Board />
+                    <Board/>
                 </div>
                 <div className="game-info">
                     <div>{/* status */}</div>
@@ -70,6 +70,6 @@ class Game extends React.Component {
 // ========================================
 
 ReactDOM.render(
-    <Game />,
+    <Game/>,
     document.getElementById('root')
 );
